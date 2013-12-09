@@ -414,13 +414,46 @@ table tbody tr:hover {
 }
 
 .content {
-  width: 74.52229%;
+  width: 100%;
   float: left;
   margin-right: 1.91083%;
   display: inline;
-  margin-top: -100px;
   position: relative;
   z-index: 1;
+}
+@media (min-width: 622px) {
+  .content {
+    width: 74.52229%;
+    float: left;
+    margin-right: 1.91083%;
+    margin-top: -100px;
+  }
+}
+
+.aside {
+  width: 100%;
+  float: left;
+  margin-right: 1.91083%;
+  display: inline;
+}
+.aside h4 {
+  border-bottom: #00bcff 1px solid;
+  margin-left: -18px;
+  padding-left: 18px;
+  margin-top: 18px;
+}
+.aside a {
+  display: block;
+  margin-bottom: 5px;
+  border-bottom: #e1dcd6 dashed 1px;
+}
+@media (min-width: 622px) {
+  .aside {
+    width: 23.56688%;
+    float: right;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .section {
@@ -559,25 +592,6 @@ article img {
 }
 .pages .next a {
   float: left;
-}
-
-.aside {
-  width: 23.56688%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -18px;
-  display: inline;
-}
-.aside h4 {
-  border-bottom: #00bcff 1px solid;
-  margin-left: -18px;
-  padding-left: 18px;
-  margin-top: 18px;
-}
-.aside a {
-  display: block;
-  margin-bottom: 5px;
-  border-bottom: #e1dcd6 dashed 1px;
 }
 
 .footer {
