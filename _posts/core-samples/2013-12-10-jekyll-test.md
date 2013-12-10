@@ -8,7 +8,7 @@ tags : [intro, beginner, jekyll, tutorial]
 
 # 中文
 This is Jekyll test.
-<!--break-->
+<!-- more -->
 
 ## Overview
 
