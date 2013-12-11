@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-.note, .note.waring {
+.section .read-more, .note, .note.waring {
   color: white;
   position: relative;
   -moz-border-radius-topright: 5px;
@@ -68,13 +68,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px, rgba(0, 0, 0, 0.2) 0 -1px inset, rgba(255, 255, 255, 0.5) 0 1px inset;
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px, rgba(0, 0, 0, 0.2) 0 -1px inset, rgba(255, 255, 255, 0.5) 0 1px inset;
 }
-.note a, .note.waring a {
+.section .read-more a, .note a, .note.waring a {
   color: #ff8249;
 }
-.note *:first-child {
+.section .read-more *:first-child, .note *:first-child {
   line-height: 1;
 }
-.note:before {
+.section .read-more:before, .note:before {
   content: "";
   position: absolute;
   left: 0;
@@ -83,7 +83,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   width: 0;
   height: 0;
 }
-.note:after {
+.section .read-more:after, .note:after {
   font-size: 2em;
   position: absolute;
   font-weight: bold;
@@ -344,15 +344,10 @@ table tbody tr:hover {
 .navigation {
   position: fixed;
   left: 0;
-  top: 5px;
+  top: 0;
   width: 100%;
   border-bottom: solid 1px rgba(255, 255, 255, 0.2);
   background: white;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #dadada));
-  background-image: -webkit-linear-gradient(#ffffff, #dadada);
-  background-image: -moz-linear-gradient(#ffffff, #dadada);
-  background-image: -o-linear-gradient(#ffffff, #dadada);
-  background-image: linear-gradient(#ffffff, #dadada);
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 3px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 3px 3px;
   box-shadow: rgba(0, 0, 0, 0.3) 0 3px 3px;
@@ -361,10 +356,25 @@ table tbody tr:hover {
 .navigation h1 {
   margin: 0;
 }
+@media (max-width: 639px) {
+  .navigation h1 {
+    font-size: 24px;
+    margin-top: auto;
+  }
+  .navigation .main-menu a {
+    padding: 9px;
+  }
+}
+.navigation.small h1 {
+  font-size: 24px;
+  margin-top: auto;
+}
+.navigation.small .main-menu a {
+  padding: 9px;
+}
 
 .logo {
   float: left;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.6);
 }
 
 .main-menu {
@@ -414,27 +424,30 @@ table tbody tr:hover {
 }
 
 .content {
-  width: 100%;
+  width: 74.52229%;
   float: left;
   margin-right: 1.91083%;
   display: inline;
+  margin-top: -100px;
   position: relative;
   z-index: 1;
 }
-@media (min-width: 622px) {
+@media (max-width: 639px) {
   .content {
-    width: 74.52229%;
+    width: 100%;
     float: left;
-    margin-right: 1.91083%;
-    margin-top: -100px;
+    margin-right: 2.89389%;
+    margin-top: 0;
   }
 }
 
 .aside {
-  width: 100%;
-  float: left;
-  margin-right: 1.91083%;
+  width: 23.56688%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -18px;
   display: inline;
+  margin-bottom: 0;
 }
 .aside h4 {
   border-bottom: #00bcff 1px solid;
@@ -447,17 +460,16 @@ table tbody tr:hover {
   margin-bottom: 5px;
   border-bottom: #e1dcd6 dashed 1px;
 }
-@media (min-width: 622px) {
+@media (max-width: 639px) {
   .aside {
-    width: 23.56688%;
-    float: right;
-    margin-right: 0;
-    margin-bottom: 0;
+    width: 100%;
+    float: left;
+    margin-right: 2.89389%;
   }
 }
 
 .section {
-  min-height: 300px;
+  min-height: 204px;
   background: white;
   position: relative;
   margin-top: 18px;
@@ -495,9 +507,82 @@ table tbody tr:hover {
   -o-transform: rotate(-2deg);
   transform: rotate(-2deg);
 }
+.section .read-more {
+  display: inline-block;
+  float: right;
+  margin: 18px 0 0 0;
+  margin-right: -46px;
+  padding: 9px 46px 9px 18px;
+  background: #007db6;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00a0e9), color-stop(100%, #007db6));
+  background-image: -webkit-linear-gradient(#00a0e9, #007db6);
+  background-image: -moz-linear-gradient(#00a0e9, #007db6);
+  background-image: -o-linear-gradient(#00a0e9, #007db6);
+  background-image: linear-gradient(#00a0e9, #007db6);
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.section .read-more:before {
+  top: -10px;
+  right: 0;
+  left: auto;
+  border-color: transparent transparent #007db6 #007db6;
+}
+.section .read-more a {
+  color: white;
+}
 
+article {
+  *zoom: 1;
+  *overflow: hidden;
+}
 article img {
   max-width: 100%;
+}
+article:after {
+  content: " ";
+  display: table;
+  clear: both;
+  visibility: hidden;
+}
+
+.page-nav {
+  margin-top: 1.8em;
+  text-align: center;
+}
+.page-nav a {
+  text-decoration: none;
+  background: white;
+  display: inline-block;
+  border: 1px #eeeeee solid;
+  color: #00a0e9;
+  margin: 0.4em;
+  padding: 0.4em 0.8em;
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  -o-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+.page-nav a:hover {
+  background: #00a0e9;
+  color: white;
+}
+.page-nav span {
+  border: 0;
+  color: #00a0e9;
+  display: inline-block;
+  margin: 5px;
+  padding: 1px 5px 1px 5px;
 }
 
 .note {

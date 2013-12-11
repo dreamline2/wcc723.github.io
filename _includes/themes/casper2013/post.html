@@ -16,24 +16,37 @@
   </article>      
 </section>
 </div>
-<aside class="aside">
-    <h4>Content navigation</h4>
+<aside class="aside"> 
+    <h4>Related Posts</h4>
+    <ul class="recent-box">
+      {% for post in site.related_posts limit:5 %}
+      <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <h4>Recent Posts</h4>
+    <ul class="recent-box">
+      {% for post in site.posts limit:5 %}
+      <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul> 
+
+    <h4>Tags</h4>
     {% unless page.categories == empty %}
-    <ul class="tag_box inline">
-      <li><i class="icon-folder-open"></i></li>
+    <ul class="tag-box">
       {% assign categories_list = page.categories %}
       {% include JB/categories_list %}
     </ul>
-    {% endunless %}  
+    {% endunless %} 
   
     {% unless page.tags == empty %}
-      <ul class="tag_box inline">
-        <li><i class="icon-tags"></i></li>
+      <ul class="tag-box">
         {% assign tags_list = page.tags %}
         {% include JB/tags_list %}
       </ul>
     {% endunless %}  
   </aside>
+
 
 <div class="pages">
       {% if page.previous %}
