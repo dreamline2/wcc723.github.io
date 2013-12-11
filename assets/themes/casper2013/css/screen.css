@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.16em;
   font-weight: bold;
   text-rendering: optimizeLegibility;
+  margin-top: 0.5em;
 }
 h1.subheader, h2.subheader, h3.subheader, h4.subheader, h5.subheader, h6.subheader {
   color: #666666;
@@ -151,7 +152,7 @@ h6 {
 
 p {
   text-align: justify;
-  margin: 1em 0;
+  margin: 1em 0 1.5em 0;
 }
 
 strong, b {
@@ -261,8 +262,9 @@ a {
 
 pre {
   background: #777777;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   padding: 10px;
+  margin-bottom: 1em;
   color: white;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -272,6 +274,11 @@ pre {
   -webkit-box-shadow: rgba(0, 0, 0, 0.6) 0 0 5px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.6) 0 0 5px inset;
   box-shadow: rgba(0, 0, 0, 0.6) 0 0 5px inset;
+}
+
+.demo {
+  padding: 10px;
+  margin-bottom: 13px;
 }
 
 table {
@@ -554,6 +561,10 @@ article:after {
   display: table;
   clear: both;
   visibility: hidden;
+}
+
+.page-header h1 {
+  margin: 0 0 0.5em 0;
 }
 
 .page-nav {

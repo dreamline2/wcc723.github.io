@@ -1,9 +1,10 @@
 ---
 layout: post
-category : jekyll
+cTitle: just Another Beginner~
+category: jekyll
 tagline: "只是另一個開始"
-tags : [intro, beginner, jekyll]
-thumbnail : 2013-12-11_150540.png
+tags: [intro, beginner, jekyll]
+thumbnail: 2013-12-11_150540.png
 ---
 {% include JB/setup %}
 
