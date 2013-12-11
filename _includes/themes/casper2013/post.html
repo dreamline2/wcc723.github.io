@@ -3,10 +3,18 @@
   <article>
     <div class="page-header">
       <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
-    </div>
+    </div>    
     <div class="date">
       <span>{{ page.date | date_to_long_string }}</span>
     </div>
+
+    {% if post.thumbnail %}
+      <div class="main-img">
+        <img src="/images/{{post.thumbnail}}" />
+      </div>
+    {% else %}
+      <!--if there is no img-->
+    {% endif %}
 
     <div>
       {{ content }}
