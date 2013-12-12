@@ -90,6 +90,46 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
 }
 
+@-webkit-keyframes banner-slider {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 1122px 0;
+  }
+}
+
+@-moz-keyframes banner-slider {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 1122px 0;
+  }
+}
+
+@-ms-keyframes banner-slider {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 1122px 0;
+  }
+}
+
+@keyframes banner-slider {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 1122px 0;
+  }
+}
+
 html, body, input, button, select, textarea, a {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
@@ -413,6 +453,15 @@ table tbody tr:hover {
   -webkit-box-shadow: #0084b3 0 0 5px inset;
   -moz-box-shadow: #0084b3 0 0 5px inset;
   box-shadow: #0084b3 0 0 5px inset;
+}
+
+.banner {
+  background: url('/images/banner-01.png?1386854930') center repeat-x;
+  min-height: 300px;
+  -webkit-animation: banner-slider 120s infinite linear;
+  -moz-animation: banner-slider 120s infinite linear;
+  -o-animation: banner-slider 120s infinite linear;
+  animation: banner-slider 120s infinite linear;
 }
 
 .content-wrap {
