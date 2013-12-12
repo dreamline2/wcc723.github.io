@@ -463,6 +463,15 @@ table tbody tr:hover {
   -o-animation: banner-slider 120s infinite linear;
   animation: banner-slider 120s infinite linear;
 }
+@media (max-width: 639px) {
+  .banner {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+    background-position: right;
+  }
+}
 
 .content-wrap {
   *zoom: 1;
