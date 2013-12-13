@@ -456,12 +456,12 @@ table tbody tr:hover {
 }
 
 .banner {
-  background: url('/images/banner-01.png?1386854930') center repeat-x;
+  background: url('/images/banner-01.png?1386893907') center repeat-x;
   min-height: 300px;
-  -webkit-animation: banner-slider 120s infinite linear;
-  -moz-animation: banner-slider 120s infinite linear;
-  -o-animation: banner-slider 120s infinite linear;
-  animation: banner-slider 120s infinite linear;
+  -webkit-animation: banner-slider 180s infinite linear;
+  -moz-animation: banner-slider 180s infinite linear;
+  -o-animation: banner-slider 180s infinite linear;
+  animation: banner-slider 180s infinite linear;
 }
 @media (max-width: 639px) {
   .banner {
@@ -611,7 +611,7 @@ article {
   *zoom: 1;
   *overflow: hidden;
 }
-article img {
+article img, article iframe {
   max-width: 100%;
 }
 article:after {
