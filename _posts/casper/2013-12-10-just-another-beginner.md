@@ -1,6 +1,6 @@
 ---
 layout: post
-cTitle: just Another Beginner~
+cTitle: Just Another Beginner~
 category: jekyll
 tagline: "只是另一個開始"
 tags: [intro, beginner, jekyll]

@@ -97,7 +97,7 @@
 
 @font-face {
   font-family: "Kavoon-Regular";
-  src: url('/stylesheets/fonts/Kavoon-Regular.ttf') format('truetype');
+  src: url('fonts/Kavoon-Regular.ttf') format('truetype');
 }
 
 .d0823 {
