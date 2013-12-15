@@ -18,11 +18,15 @@ tagline:
 <div class="page-header">
 <h1><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.cTitle }}</a></h1>
 </div>
-<div class="post-info">
-	<i class="icon-calendar"></i><span class="time">{{ post.time | date: '%Y' }}</span>
+<div class="note post-info">
+	分類：<a href="categories.html#{{ post.category }}-ref">{{ post.category }}</a>
 </div>
+<time class="post-time">{{ post.date | date_to_long_string }}</time>
+
 {% if post.thumbnail %}
+<p>
 	<img src="/images/{{ post.thumbnail }}" />
+</p>
 {% else %}
 	<!--if there is no img-->
 {% endif %}
@@ -44,6 +48,6 @@ tagline:
 
 <!-- page nav-->
 <div class="page-nav">
-  <a href="/archive.html">See more</a>
+  <a href="/archive.html">More</a>
 </div>
 <!-- page nav end--> 

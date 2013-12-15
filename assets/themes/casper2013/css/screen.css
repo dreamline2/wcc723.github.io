@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-.section .read-more, .note, .note.waring {
+.section .read-more, .note, .note.waring, .note.post-info {
   color: white;
   position: relative;
   -moz-border-radius-topright: 5px;
@@ -68,7 +68,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px, rgba(0, 0, 0, 0.2) 0 -1px inset, rgba(255, 255, 255, 0.5) 0 1px inset;
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 5px, rgba(0, 0, 0, 0.2) 0 -1px inset, rgba(255, 255, 255, 0.5) 0 1px inset;
 }
-.section .read-more a, .note a, .note.waring a {
+.section .read-more a, .note a, .note.waring a, .note.post-info a {
   color: #ff8249;
 }
 .section .read-more *:first-child, .note *:first-child {
@@ -694,6 +694,33 @@ article:after {
   content: " ‼ ";
   top: 18px;
   left: 13px;
+}
+
+.note.post-info {
+  display: inline-block;
+  margin: 0;
+  margin-left: -46px;
+  padding: 9px 18px 9px 46px;
+  background: #302922;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #4d4238), color-stop(100%, #302922));
+  background-image: -webkit-linear-gradient(#4d4238, #302922);
+  background-image: -moz-linear-gradient(#4d4238, #302922);
+  background-image: -o-linear-gradient(#4d4238, #302922);
+  background-image: linear-gradient(#4d4238, #302922);
+}
+.note.post-info:before {
+  top: -10px;
+  border-color: transparent #302922 #302922 transparent;
+}
+.note.post-info:after {
+  content: "";
+  top: 18px;
+  left: 13px;
+}
+
+.post-time {
+  margin: 0 9px;
+  color: #777777;
 }
 
 .pages span {
