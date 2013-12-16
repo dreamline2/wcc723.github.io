@@ -19,6 +19,7 @@ thumbnail: banner-01.png
 ### 準備圖片
 
 一開始當然要先做一張圖，圖的重點是左右方可以相連的，如下圖最左方的chrome是被切一半，和右方的另一半chrome剛好可以接起來。另外這banner的寬度是"1122px"，等等會用到這寬度。
+
 ![banner](/images/banner-01.png)
 
 ### CSS
