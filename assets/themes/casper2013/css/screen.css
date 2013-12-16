@@ -140,9 +140,10 @@ html, body {
   *font-size: 14px;
   line-height: 22px;
   color: #3a3a3a;
-  word-break: break-all;
+  word-break: keep-all;
   word-wrap: break-word;
   z-index: 1;
+  background: whitesmoke;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -191,7 +192,6 @@ h6 {
 }
 
 p {
-  text-align: justify;
   margin: 1em 0 1.5em 0;
 }
 
@@ -410,6 +410,11 @@ table tbody tr:hover {
   }
   .navigation .main-menu a {
     padding: 9px;
+  }
+}
+@media (max-width: 320px) {
+  .navigation h1 {
+    display: none;
   }
 }
 .navigation.small h1 {
@@ -731,6 +736,7 @@ article:after {
   color: white;
   display: inline-block;
   border: 1px solid #ccc2b8 \9;
+  max-width: 60%;
 }
 .pages span:hover, .pages span:active {
   background: white;
