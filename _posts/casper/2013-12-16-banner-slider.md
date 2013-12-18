@@ -2,19 +2,19 @@
 layout: post
 cTitle: 純 "CSS" Banner animation教學
 category: CSS
-tagline: 
+tagline: 本站上方banner製作方式已修改
 tags: [css, sass]
 thumbnail: banner-01.png
 ---
 在座這網站的時候，上方有保留一塊區域打算放banner，一般來說banner都會用jquery跑馬燈的方式去做，但是對我來說那要做好幾張圖...好麻煩，所以我就做一張連續圖片(左右可以相連的圖片)，讓他不斷的向右移動。
 <!-- more -->
 ## 本篇重點
-本篇會介紹如何用css寫出本站上方的banner。
+本篇會介紹如何用css寫出類似本站上方的banner。
 
 ### CSS範例
-
-<div class="demo banner"> </div>
-
+<iframe src="http://cdpn.io/Cgbtn" frameborder="0" height="340" width="100%">
+	
+</iframe>
 
 ### 準備圖片
 

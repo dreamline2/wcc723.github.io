@@ -504,6 +504,22 @@ table tbody tr:hover {
   -o-animation: banner-slider 180s infinite linear;
   animation: banner-slider 180s infinite linear;
 }
+@media (max-width: 1122px) {
+  .banner .banner-wrap {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -o-animation: none;
+    animation: none;
+  }
+  .banner .banner-wrap span {
+    background-position: right;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+  }
+}
 .banner span {
   display: block;
   min-height: 300px;
@@ -519,11 +535,6 @@ table tbody tr:hover {
   -ms-transform: translate3d(-1122px, 0, 0);
   -o-transform: translate3d(-1122px, 0, 0);
   transform: translate3d(-1122px, 0, 0);
-}
-@media (max-width: 639px) {
-  .banner {
-    background-position: right;
-  }
 }
 
 .content-wrap {
