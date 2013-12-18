@@ -92,41 +92,73 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @-webkit-keyframes banner-slider {
   from {
-    background-position: 0 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    background-position: 1122px 0;
+    -webkit-transform: translate3d(1122px, 0, 0);
+    -moz-transform: translate3d(1122px, 0, 0);
+    -ms-transform: translate3d(1122px, 0, 0);
+    -o-transform: translate3d(1122px, 0, 0);
+    transform: translate3d(1122px, 0, 0);
   }
 }
 
 @-moz-keyframes banner-slider {
   from {
-    background-position: 0 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    background-position: 1122px 0;
+    -webkit-transform: translate3d(1122px, 0, 0);
+    -moz-transform: translate3d(1122px, 0, 0);
+    -ms-transform: translate3d(1122px, 0, 0);
+    -o-transform: translate3d(1122px, 0, 0);
+    transform: translate3d(1122px, 0, 0);
   }
 }
 
 @-ms-keyframes banner-slider {
   from {
-    background-position: 0 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    background-position: 1122px 0;
+    -webkit-transform: translate3d(1122px, 0, 0);
+    -moz-transform: translate3d(1122px, 0, 0);
+    -ms-transform: translate3d(1122px, 0, 0);
+    -o-transform: translate3d(1122px, 0, 0);
+    transform: translate3d(1122px, 0, 0);
   }
 }
 
 @keyframes banner-slider {
   from {
-    background-position: 0 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
   to {
-    background-position: 1122px 0;
+    -webkit-transform: translate3d(1122px, 0, 0);
+    -moz-transform: translate3d(1122px, 0, 0);
+    -ms-transform: translate3d(1122px, 0, 0);
+    -o-transform: translate3d(1122px, 0, 0);
+    transform: translate3d(1122px, 0, 0);
   }
 }
 
@@ -338,7 +370,7 @@ table th, table td {
   border-bottom: 1px solid #dddddd;
   border-collapse: collapse;
 }
-table thead th {
+table th {
   font-weight: bolder;
 }
 table tbody tr {
@@ -461,19 +493,35 @@ table tbody tr:hover {
 }
 
 .banner {
-  background: url('/images/banner-01.png?1386893907') center repeat-x;
+  position: relative;
   min-height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+.banner .banner-wrap {
   -webkit-animation: banner-slider 180s infinite linear;
   -moz-animation: banner-slider 180s infinite linear;
   -o-animation: banner-slider 180s infinite linear;
   animation: banner-slider 180s infinite linear;
 }
+.banner span {
+  display: block;
+  min-height: 300px;
+  width: 100%;
+  position: absolute;
+  background: url('/images/banner-01.png?1386893907') center repeat-x;
+  left: 0;
+  top: 0;
+}
+.banner span:nth-child(2n) {
+  -webkit-transform: translate3d(-1122px, 0, 0);
+  -moz-transform: translate3d(-1122px, 0, 0);
+  -ms-transform: translate3d(-1122px, 0, 0);
+  -o-transform: translate3d(-1122px, 0, 0);
+  transform: translate3d(-1122px, 0, 0);
+}
 @media (max-width: 639px) {
   .banner {
-    -webkit-animation: none;
-    -moz-animation: none;
-    -o-animation: none;
-    animation: none;
     background-position: right;
   }
 }
@@ -525,7 +573,7 @@ table tbody tr:hover {
   padding-left: 18px;
   margin-top: 18px;
 }
-.aside a {
+.aside ul a {
   display: block;
   margin-bottom: 5px;
   border-bottom: #e1dcd6 dashed 1px;
