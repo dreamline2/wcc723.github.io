@@ -366,7 +366,7 @@
 }
 .d0922 .naruto {
   display: inline-block;
-  background-image: url("../images/naruto.png");
+  background-image: url("/images/naruto.png");
   height: 404px;
   width: 156px;
   position: relative;
@@ -387,13 +387,13 @@
   height: 414px;
   width: 214px;
   left: 0;
-  background-image: url("../images/narutoR.png");
+  background-image: url("/images/narutoR.png");
 }
 .d0922 .naruto:before {
   height: 413px;
   width: 231px;
   right: 0;
-  background-image: url("../images/narutoL.png");
+  background-image: url("/images/narutoL.png");
 }
 .d0922 .naruto:hover:after {
   opacity: 1;
@@ -475,7 +475,7 @@
   text-shadow: 1px 1px 5px gray;
 }
 .d0923 .texture {
-  background: url("../images/agsquare.png");
+  background: url("/images/agsquare.png");
 }
 .d0923 .text-shadow1 {
   text-shadow: 1px 1px 0 white;
@@ -652,7 +652,7 @@
   background-color: transparent;
 }
 .d0925 .pic {
-  background-image: url("../images/IMAG0645.jpg");
+  background-image: url("/images/IMAG0645.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1436,7 +1436,7 @@
 .d1002 .ryu {
   width: 131px;
   height: 100px;
-  background: url("../images/20131002.png") left bottom no-repeat;
+  background: url("/images/20131002.png") left bottom no-repeat;
   -webkit-transition: background 1s;
   -moz-transition: background 1s;
   -o-transition: background 1s;
@@ -1452,7 +1452,7 @@
 .d1002 .ryu2 {
   width: 131px;
   height: 100px;
-  background: url("../images/20131002.png") no-repeat;
+  background: url("/images/20131002.png") no-repeat;
   animation: ryu 1s infinite alternate;
   -webkit-animation: ryu 1s infinite alternate;
   animation-timing-function: steps(13, end);

@@ -1365,3 +1365,18 @@
   -moz-filter: blur(5px);
   filter: blur(5px);
 }
+
+.d1218 .circle {
+  width: 140px;
+  height: 140px;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background: red;
+}
