@@ -510,9 +510,6 @@ table tbody tr:hover {
     -moz-animation: none;
     -o-animation: none;
     animation: none;
-  }
-  .banner .banner-wrap span {
-    background-position: right;
     -webkit-transform: none;
     -moz-transform: none;
     -ms-transform: none;
@@ -520,7 +517,7 @@ table tbody tr:hover {
     transform: none;
   }
 }
-.banner span {
+.banner span, .banner span:after {
   display: block;
   min-height: 300px;
   width: 100%;
@@ -529,7 +526,8 @@ table tbody tr:hover {
   left: 0;
   top: 0;
 }
-.banner span:nth-child(2n) {
+.banner span:after, .banner span:after:after {
+  content: "";
   -webkit-transform: translate3d(-1122px, 0, 0);
   -moz-transform: translate3d(-1122px, 0, 0);
   -ms-transform: translate3d(-1122px, 0, 0);
