@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>aShare - {{ page.title }}</title>
+    <title>aShare - {{ page.cTitle }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="{{ page.title }}"/>
+    <meta property="og:title" content="{{ page.cTitle }}"/>
     <meta property="og:type" content="blog"/>
     {% if page.thumbnail %}
       <meta property="og:image" content="/images/{{ page.thumbnail }}"/>
