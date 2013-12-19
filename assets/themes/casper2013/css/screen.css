@@ -168,8 +168,8 @@ html, body, input, button, select, textarea, a {
 }
 
 html, body {
-  font-size: 15px;
-  *font-size: 16px;
+  font-size: 13px;
+  *font-size: 14px;
   line-height: 22px;
   color: #3a3a3a;
   word-break: keep-all;
@@ -260,6 +260,9 @@ u {
   text-decoration: underline;
 }
 
+p {
+  font-size: 15px;
+}
 p code {
   padding: 0px 3px 0 3px;
   color: #dd1144;
@@ -350,7 +353,7 @@ pre {
 
 .demo {
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 table {
@@ -438,7 +441,6 @@ table tbody tr:hover {
 }
 @media (max-width: 639px) {
   .navigation h1 {
-    font-size: 24px;
     margin-top: auto;
   }
   .navigation .main-menu a {
