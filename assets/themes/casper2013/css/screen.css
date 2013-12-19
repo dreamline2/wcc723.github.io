@@ -92,73 +92,73 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @-webkit-keyframes banner-slider {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   to {
-    -webkit-transform: translate3d(1122px, 0, 0);
-    -moz-transform: translate3d(1122px, 0, 0);
-    -ms-transform: translate3d(1122px, 0, 0);
-    -o-transform: translate3d(1122px, 0, 0);
-    transform: translate3d(1122px, 0, 0);
+    -webkit-transform: translate(1122px, 0);
+    -moz-transform: translate(1122px, 0);
+    -ms-transform: translate(1122px, 0);
+    -o-transform: translate(1122px, 0);
+    transform: translate(1122px, 0);
   }
 }
 
 @-moz-keyframes banner-slider {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   to {
-    -webkit-transform: translate3d(1122px, 0, 0);
-    -moz-transform: translate3d(1122px, 0, 0);
-    -ms-transform: translate3d(1122px, 0, 0);
-    -o-transform: translate3d(1122px, 0, 0);
-    transform: translate3d(1122px, 0, 0);
+    -webkit-transform: translate(1122px, 0);
+    -moz-transform: translate(1122px, 0);
+    -ms-transform: translate(1122px, 0);
+    -o-transform: translate(1122px, 0);
+    transform: translate(1122px, 0);
   }
 }
 
 @-ms-keyframes banner-slider {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   to {
-    -webkit-transform: translate3d(1122px, 0, 0);
-    -moz-transform: translate3d(1122px, 0, 0);
-    -ms-transform: translate3d(1122px, 0, 0);
-    -o-transform: translate3d(1122px, 0, 0);
-    transform: translate3d(1122px, 0, 0);
+    -webkit-transform: translate(1122px, 0);
+    -moz-transform: translate(1122px, 0);
+    -ms-transform: translate(1122px, 0);
+    -o-transform: translate(1122px, 0);
+    transform: translate(1122px, 0);
   }
 }
 
 @keyframes banner-slider {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   to {
-    -webkit-transform: translate3d(1122px, 0, 0);
-    -moz-transform: translate3d(1122px, 0, 0);
-    -ms-transform: translate3d(1122px, 0, 0);
-    -o-transform: translate3d(1122px, 0, 0);
-    transform: translate3d(1122px, 0, 0);
+    -webkit-transform: translate(1122px, 0);
+    -moz-transform: translate(1122px, 0);
+    -ms-transform: translate(1122px, 0);
+    -o-transform: translate(1122px, 0);
+    transform: translate(1122px, 0);
   }
 }
 
@@ -168,8 +168,8 @@ html, body, input, button, select, textarea, a {
 }
 
 html, body {
-  font-size: 13px;
-  *font-size: 14px;
+  font-size: 15px;
+  *font-size: 16px;
   line-height: 22px;
   color: #3a3a3a;
   word-break: keep-all;
@@ -350,7 +350,7 @@ pre {
 
 .demo {
   padding: 10px;
-  margin-bottom: 13px;
+  margin-bottom: 15px;
 }
 
 table {
@@ -434,6 +434,7 @@ table tbody tr:hover {
 }
 .navigation h1 {
   margin: 0;
+  font-size: 36px;
 }
 @media (max-width: 639px) {
   .navigation h1 {
@@ -504,35 +505,20 @@ table tbody tr:hover {
   -o-animation: banner-slider 180s infinite linear;
   animation: banner-slider 180s infinite linear;
 }
-@media (max-width: 1122px) {
-  .banner .banner-wrap {
-    -webkit-animation: none;
-    -moz-animation: none;
-    -o-animation: none;
-    animation: none;
-    -webkit-transform: none;
-    -moz-transform: none;
-    -ms-transform: none;
-    -o-transform: none;
-    transform: none;
-  }
-}
 .banner span, .banner span:after {
   display: block;
   min-height: 300px;
   width: 100%;
-  position: absolute;
-  background: url('/images/banner-01.png?1386893907') center repeat-x;
-  left: 0;
-  top: 0;
+  background: url('/images/banner-01.png?1386893907') top left repeat-x;
 }
-.banner span:after, .banner span:after:after {
+.banner span:after {
+  background-position: top right;
   content: "";
-  -webkit-transform: translate3d(-1122px, 0, 0);
-  -moz-transform: translate3d(-1122px, 0, 0);
-  -ms-transform: translate3d(-1122px, 0, 0);
-  -o-transform: translate3d(-1122px, 0, 0);
-  transform: translate3d(-1122px, 0, 0);
+  -webkit-transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
 }
 
 .content-wrap {
