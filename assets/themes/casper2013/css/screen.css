@@ -437,11 +437,11 @@ table tbody tr:hover {
 }
 .navigation h1 {
   margin: 0;
-  font-size: 36px;
 }
 @media (max-width: 639px) {
   .navigation h1 {
     margin-top: auto;
+    font-size: 24px;
   }
   .navigation .main-menu a {
     padding: 9px;
