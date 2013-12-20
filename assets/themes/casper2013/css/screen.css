@@ -354,6 +354,18 @@ pre {
 .demo {
   padding: 10px;
   margin-bottom: 13px;
+  border: 1px dashed orange;
+  position: relative;
+}
+.demo:after {
+  content: attr(data-demo);
+  color: #777777;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 0 4px;
+  border: 1px dashed orange;
+  position: absolute;
+  right: -1px;
+  top: -1px;
 }
 
 table {
