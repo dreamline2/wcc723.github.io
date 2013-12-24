@@ -24,7 +24,7 @@ thumbnail: 2013-12-23-lol-zig.png"
 	</div>
 </div>
 
-*範例來源：英雄聯盟 *
+*圖片來源：英雄聯盟 *
 
 
 ## 原理
@@ -56,7 +56,7 @@ thumbnail: 2013-12-23-lol-zig.png"
 
 
 ### 完整sass
-大部份的功能，都直接寫在註解裡，這樣比較容易理解，另外filter是比較號效能，建議不要結合transition(等等下方會有範例)。
+大部份的功能，都直接寫在註解裡，這樣比較容易理解，另外filter是比較耗效能，建議不要結合transition(等等下方會有範例)。
 
     .demo
         position: relative  
@@ -106,7 +106,7 @@ thumbnail: 2013-12-23-lol-zig.png"
 
 
 ## 增加filter 效果
-這部分在增加一個filter的drop-shadow效果，這樣會更有層次，但是效能會更差一點。而這邊要表現的效果，就是角色後方的陰影，會因為hover而改變位置，如果覺得filter效能不好，較好的方式還是在增加一層圖片，然後再用transform去改變其位置。
+這部分在增加一個filter的drop-shadow效果，這樣會更有層次，但是效能會更差一點。而這邊要表現的效果，就是角色後方的陰影，會因為hover而改變位置。因filter效能不好，較好的方式還是在後方增加一層圖片，然後再用transform去改變其位置。
 
 <div class="demo d1223" data-demo="Hover me!">
     <div class="transform3d2">
