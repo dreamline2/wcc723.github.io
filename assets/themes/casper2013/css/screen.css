@@ -71,8 +71,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .section .read-more a, .note a, .note.waring a, .note.post-info a {
   color: #ff8249;
 }
-.section .read-more *:first-child, .note *:first-child {
-  line-height: 1;
+.section .read-more > *:first-child, .note > *:first-child {
+  margin-top: 0;
+}
+.section .read-more > *:last-child, .note > *:last-child {
+  margin-bottom: 0;
 }
 .section .read-more:before, .note:before {
   content: "";
@@ -168,9 +171,9 @@ html, body, input, button, select, textarea, a {
 }
 
 html, body {
-  font-size: 13px;
-  *font-size: 14px;
-  line-height: 22px;
+  font-size: 15px;
+  *font-size: 16px;
+  line-height: 1.6em;
   color: #3a3a3a;
   word-break: keep-all;
   word-wrap: break-word;
@@ -182,7 +185,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.16em;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  margin-top: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 0.6em;
 }
 h1.subheader, h2.subheader, h3.subheader, h4.subheader, h5.subheader, h6.subheader {
   color: #666666;
@@ -194,33 +198,27 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 }
 
 h1 {
-  font-size: 2.8em;
-  margin-bottom: 22px;
+  font-size: 2.2em;
 }
 
 h2 {
-  font-size: 2.4em;
-  margin-bottom: 22px;
+  font-size: 1.8em;
 }
 
 h3 {
-  font-size: 2.2em;
-  margin-bottom: 17.6px;
+  font-size: 1.4em;
 }
 
 h4 {
-  font-size: 1.6em;
-  margin-bottom: 17.6px;
+  font-size: 1.2em;
 }
 
 h5 {
-  font-size: 1.4em;
-  margin-bottom: 17.6px;
+  font-size: 1.2em;
 }
 
 h6 {
-  font-size: 1.4em;
-  margin-bottom: 17.6px;
+  font-size: 1em;
 }
 
 p {
@@ -260,9 +258,6 @@ u {
   text-decoration: underline;
 }
 
-p {
-  font-size: 15px;
-}
 p code {
   padding: 0px 3px 0 3px;
   color: #dd1144;
@@ -293,6 +288,13 @@ a {
 .section a:hover {
   padding-bottom: 0.3px;
   border-bottom: #00a0e9 1px solid;
+}
+
+hr {
+  margin: 1.6em 0 1.6em;
+  border: none;
+  border-top: 1px solid #cccccc;
+  border-bottom: 1px solid white;
 }
 
 .section ul {
@@ -353,7 +355,7 @@ pre {
 
 .demo {
   padding: 10px;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
   border: 1px dashed orange;
   position: relative;
 }
@@ -389,14 +391,10 @@ table th {
   font-weight: bolder;
 }
 table tbody tr {
-  -webkit-transition-property: background-color;
-  -moz-transition-property: background-color;
-  -o-transition-property: background-color;
-  transition-property: background-color;
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
 }
 table tbody tr:nth-child(odd) {
   background-color: #fbfbfb;
@@ -406,33 +404,23 @@ table tbody tr:hover {
 }
 
 .icon-pre {
-  display: inline-block;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPRJREFUeNrM2NENhCAQBFD3KqAUS7kSroQrxRKuFEuwhCvBDnD5uB8TwwAze5JM/IH4AgYWLec83ak9pps1KcjMkmf1zPCgsmSKeEuerbzCs3tmaFwAJregojAwKhLzyzcEBGJiZoiFoYCYmGEQGzMEUmC6QSpMF0iJaQapMU2gCAwMisJAoEgMCqphMgtTghRoC9DnTavqwG/oBczSJ2TJolGt+5Ac1bNTS1G9Z5kMNXLaS1Cj9RAdxagYqShWTU1DMW8dFBT7XjaMUtxca6jtH3f7K1SpHFI46AJVxUhBJxSEKTH1Lz0ze/pj9ffsSP9DgAEAR1WR8l6pNN4AAAAASUVORK5CYII=');
+  background-image: url('/images/icon-pre.png?1386569540');
   width: 36px;
   height: 36px;
 }
 .icon-pre.svg {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xIFRpbnkvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEtdGlueS5kdGQiPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJ0aW55IiBpZD0i5ZyW5bGkXzEiDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzZweCIgaGVpZ2h0PSIzNnB4Ig0KCSB2aWV3Qm94PSIwIDAgMzYgMzYiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gcG9pbnRzPSIxMy42NTQsLTguMDc4IDkuNDEyLC0xMi4zMiAyMS43MzQsLTI0LjY0MyA5LjQxMiwtMzYuOTY2IDEzLjY1NCwtNDEuMjA4IDMwLjIyLC0yNC42NDMgIi8+DQo8cG9seWdvbiBwb2ludHM9IjIzLjg1NiwzNC41MDQgNy4yOTEsMTcuOTM5IDIzLjg1NiwxLjM3NSAyOC4wOTgsNS42MTcgMTUuNzc2LDE3LjkzOSAyOC4wOTgsMzAuMjYyICIvPg0KPC9zdmc+DQo=');
+  background-image: url('/images/icon-pre.svg?1386569533');
   background-image: url('/images/icon-pre.png?1386569540') \9;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .icon-next {
-  display: inline-block;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPBJREFUeNrM2MENwjAMheGGCRiBETJSR+oIjMAojMAIbBASqQcOQLHf/6pWinpK+ymxY7eltTYd6TplJ5ZSZotorFB09Os6po57Zv7PZwuY5kCpGBwVwSxfMCgqApo3QAgqumV2VCaorahs2ttQ+aU1obQANKD0NIVRzGEGorgjH0KxhRFATXi1FlE4SEW5QOc+HhugZx+XPbZsYO5/YOoeQS1h6LSXMeTBiGCo0oFhiOKKYtT2A8coDZoFk21hbZhMk2/FRD+D7Jgo6ObGREF1fakNk4mhTygMk82ydxSKUc6huvY7lW5fytF+6b0EGAB090ypouj7DwAAAABJRU5ErkJggg==');
+  background-image: url('/images/icon-next.png?1386569521');
   width: 36px;
   height: 36px;
 }
 .icon-next.svg {
-  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xIFRpbnkvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEtdGlueS5kdGQiPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGJhc2VQcm9maWxlPSJ0aW55IiBpZD0i5ZyW5bGkXzEiDQoJIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzZweCIgaGVpZ2h0PSIzNnB4Ig0KCSB2aWV3Qm94PSIwIDAgMzYgMzYiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gcG9pbnRzPSIxMy42NTQsMzQuNTAzIDkuNDEyLDMwLjI2MSAyMS43MzQsMTcuOTM4IDkuNDEyLDUuNjE2IDEzLjY1NCwxLjM3NCAzMC4yMiwxNy45MzggIi8+DQo8cG9seWdvbiBwb2ludHM9IjIzLjg1Niw3Ny4wODYgNy4yOTEsNjAuNTIxIDIzLjg1Niw0My45NTYgMjguMDk4LDQ4LjE5OCAxNS43NzYsNjAuNTIxIDI4LjA5OCw3Mi44NDQgIi8+DQo8L3N2Zz4NCg==');
+  background-image: url('/images/icon-next.svg?1386569486');
   background-image: url('/images/icon-next.png?1386569521') \9;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 }
 
 .navigation {
@@ -523,6 +511,7 @@ table tbody tr:hover {
   display: block;
   min-height: 300px;
   width: 100%;
+  min-width: 1122px;
   background: url('/images/banner-01.png?1386893907') top left repeat-x;
 }
 .banner span:after {

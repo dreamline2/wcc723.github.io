@@ -1485,3 +1485,49 @@
   -moz-filter: drop-shadow(-5px 0 0 rgba(0, 0, 0, 0.5));
   filter: drop-shadow(-5px 0 0 rgba(0, 0, 0, 0.5));
 }
+
+.d0101 {
+  font-size: 1.2em;
+}
+.d0101 .serif {
+  font-family: serif;
+}
+.d0101 .sans-serif {
+  font-family: sans-serif;
+}
+.d0101 .cursive {
+  font-family: cursive;
+}
+.d0101 .fantasy {
+  font-family: fantasy;
+}
+.d0101 .monospace {
+  font-family: monospace;
+}
+.d0101 .Microsoft-JhengHei2 {
+  font-family: "Microsoft JhengHei";
+}
+.d0101 .Microsoft-JhengHei2 {
+  font-family: "微軟正黑體";
+}
+.d0101 .Segoe-UI {
+  font-family: "Segoe UI";
+}
+.d0101 .verdana {
+  font-family: verdana;
+}
+.d0101 .Segoe-UI2 {
+  font-family: "Segoe UI", "微軟正黑體", sans-serif;
+}
+.d0101 .Apple {
+  font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+}
+.d0101 .Microsoft {
+  font-family: "微軟正黑體", "Microsoft JhengHei", "Segoe UI Semibold", "Segoe UI", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+}
+.d0101 .Yahoo {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.d0101 .Google {
+  font-family: arial, sans-serif;
+}
