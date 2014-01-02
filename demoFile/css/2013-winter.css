@@ -839,10 +839,10 @@
   display: flex;
   flex-wrap: wrap;
 }
-.d1026 .container.center {
+.d1026 .container.center1 {
   height: 300px;
 }
-.d1026 .container.center div {
+.d1026 .container.center1 div {
   margin: auto;
   width: 100px;
   height: 100px;

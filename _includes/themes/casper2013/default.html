@@ -40,6 +40,13 @@
     <!--[if lt IE 9]>
       <script src="{{ ASSET_PATH }}/js/html5shiv.js"></script>
     <![endif]-->
+
+    {% if page.cssdemo %}
+  <link href="/demoFile/css/{{page.cssdemo}}.css" rel="stylesheet">
+{% endif %}
+{% if page.jsdemo %}   
+  <script src="/demoFile/js/{{page.jsdemo}}.js"></script>
+{% endif %}
  </head>
 <body>
   
@@ -78,10 +85,5 @@
 {% include JB/analytics %}
     
 </body>
-{% if page.cssdemo %}
-  <link href="/demoFile/css/{{page.cssdemo}}.css" rel="stylesheet">
-{% endif %}
-{% if page.jsdemo %}   
-  <script src="/demoFile/js/{{page.jsdemo}}.js"></script>
-{% endif %}
+
 </html>

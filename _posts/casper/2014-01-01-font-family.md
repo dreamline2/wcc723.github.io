@@ -1,9 +1,9 @@
 ---
 layout: post
 cTitle: font-family要怎麼玩
-category: CSS
+category: css
 tagline: 
-tags: [CSS]
+tags: [css]
 cssdemo: 2013-winter
 thumbnail: 
 ---
