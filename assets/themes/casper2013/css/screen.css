@@ -185,11 +185,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.16em;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  margin-top: 1em;
   margin-bottom: 0.6em;
 }
 h1.subheader, h2.subheader, h3.subheader, h4.subheader, h5.subheader, h6.subheader {
   color: #666666;
+}
+h1.title, h2.title, h3.title, h4.title, h5.title, h6.title {
+  margin-top: 0;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-weight: normal;
@@ -199,26 +201,32 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 
 h1 {
   font-size: 2.2em;
+  margin-top: 1.5em;
 }
 
 h2 {
   font-size: 1.8em;
+  margin-top: 1.5em;
 }
 
 h3 {
   font-size: 1.4em;
+  margin-top: 1em;
 }
 
 h4 {
   font-size: 1.2em;
+  margin-top: 1em;
 }
 
 h5 {
   font-size: 1.2em;
+  margin-top: 1em;
 }
 
 h6 {
   font-size: 1em;
+  margin-top: 1em;
 }
 
 p {
