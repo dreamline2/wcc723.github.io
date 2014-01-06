@@ -3,7 +3,7 @@ layout: post
 cTitle: GitHub Page
 category: jekyll
 tagline: Jekyll 前置作業
-tags: [jekyll]
+tags: [jekyll, github, git]
 cssdemo: 
 thumbnail: 2014-01-02_161136.png
 ---
