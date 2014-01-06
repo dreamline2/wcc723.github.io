@@ -77,7 +77,7 @@ Github Pages是Github提供的服務，可以建立自己的靜態頁面，而�
 - 免費 free!
 - 容量無限 只要會git commit、git push。
 
-### Markdwon
+### Markdown
 Markdown的目標是實現「易讀易寫」，他在編寫完後就像是一般的文字檔，而不會像是程式語言，並沒有許多的標籤及指令。
 其語法都是用標點符號組成，主要目的是用來作為網路內容的寫作語言。相關範例建議參考 [http://markdown.tw/](http://markdown.tw/)
 
