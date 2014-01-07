@@ -76,14 +76,13 @@
 
 <footer class="footer">
   <div class="container">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} 
-          powered by <a href="http://jekyllrb.com/" target="_blank">jekyll</a>
+    <p>&copy; {{ site.time | date: '%Y' }} <a href="https://www.facebook.com/chihcheng.wang.3" target="_blank">{{ site.author.name }} </a>
+          powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a>
     </p>
   </div>
 </footer>
-
-{% include JB/analytics %}
-    
 </body>
+{% include JB/analytics %}
 
+{% include JB/googleSearch %}  
 </html>

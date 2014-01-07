@@ -114,6 +114,8 @@ JB :
   # Set 'provider' to the sharing provider you want to use.
   # Set 'provider' to false to turn sharing off globally.
   #
+  googleSearch : '005890701063422651090:k08eix30qoi'
+
   sharing :
     provider : false
     
