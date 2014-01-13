@@ -6,7 +6,7 @@ tagline: 之Mac OSX可以跳過一大段
 tags: [jekyll, github, git]
 cssdemo: 
 thumbnail: 2013-11-30_213819.png
-published: false
+published: true
 ---
 
 Jekyll是在Ruby環境下運行，而Windows對於Ruby的支援性較差，所以在安裝時較為麻煩(Mac OS使用者可以直接參考[官方網站](http://jekyllrb.com/))，並且會有些問題，有興趣的Windows user就來參考我這篇吧~(我至少從頭裝了5次!)。
@@ -116,10 +116,11 @@ Mac OS使用者從這邊開始與Windows較為接近，可以從這邊開始閱�
 
 ![](/images/2014-01-12_182831.png)
 
+---------
 
 ### Windows 特有錯誤
 
-在我安裝過那麼多次，都一定會遇到的錯誤，就是Windows版 jekyll的中文會有編碼的問題，只要輸入`jekyll server`就會出現以下錯誤。
+在我安裝過那麼多次，都一定會遇到的錯誤，就是Windows版 jekyll中文會有編碼的問題，只要輸入`jekyll server`就會出現以下錯誤。
 
 ![](/images/2014-01-09_220257.png)
 
@@ -127,7 +128,7 @@ Mac OS使用者從這邊開始與Windows較為接近，可以從這邊開始閱�
 
 ![](/images/2014-01-09_220510.png)
 
-在windows的以下路徑找到convertible.rb這個檔案打開
+在windows的Ruby安裝路徑找到convertible.rb這個檔案打開
 
 	C:\Ruby200-x64\lib\ruby\gems\2.0.0\gems\jekyll-1.4.2\lib\jekyll\convertible.rb
 
@@ -141,10 +142,12 @@ Mac OS使用者從這邊開始與Windows較為接近，可以從這邊開始閱�
 
 接下來再輸入一次jekyll server試試看吧，這問題就會解決了。
 
-### Mac OS的特有優勢
+### Mac OS的優勢
 
-windows在每次修改完檔案後，都必須停止jekyll server，再重新啟動，網站才會更新；而Mac OS只要輸入`jekyll server --auto`，他就會自動偵測站台是否有儲存，只要有儲存動作就會更新網站。
+windows在每次修改完檔案後，都必須停止jekyll server，再重新啟動，網站才會更新；而Mac OS只要輸入`jekyll server --watch`，他就會自動偵測站台是否有儲存，只要有儲存動作就會更新網站。
 
-	jekyll server --auto
+	jekyll server --watch
+
+![](/images/2014-01-13-83410.png)
 
 所以我喜歡在Mac OS寫文章...。
