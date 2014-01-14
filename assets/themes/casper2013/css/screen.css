@@ -568,6 +568,11 @@ table tbody tr:hover {
     margin-top: 0;
   }
 }
+.content p > img {
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+}
 
 .aside {
   width: 23.8806%;
