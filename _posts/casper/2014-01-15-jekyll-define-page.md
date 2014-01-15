@@ -6,7 +6,7 @@ tagline:
 tags: [jekyll, github, git]
 cssdemo: 
 thumbnail: 
-published: false
+published: true
 ---
 
 會用jekyll有一部分是想要自己設計版型，我所擅長的是視覺設計、HTML、CSS，我就用這幾個技能設計自己的版型，當然這並不是那麼的一兩篇就可以介紹完。所以這篇會說明一個範例，介紹Jekyll中的版型運作邏輯，有興趣的使用者可以依據這概念設計屬於自己的blog。
@@ -34,7 +34,7 @@ published: false
 
 ## Jekyll bootstrap架構
 
-首先我們再來看一下網站架構，這邊列出可能常會修改到的檔案。
+首先我們再來看一下網站架構，這邊列出可能會修改到的檔案。
 
 	|-- index.html   #網站首頁
 	|-- _config.yml  #網站設定檔
@@ -78,6 +78,13 @@ theme :
 而最後的`include/themes/twitter/default.html`的結構就像是一般的html，而以上的內容會被放在`default.html`的`{ { content } }`內。
 
 default.html的[原始碼](https://github.com/plusjade/jekyll-bootstrap/blob/master/_includes/themes/twitter/default.html)
+
+而以上三個請參考這張圖，最左方的是跟目錄的`index.html`，透過一層一層的去取的Jekyll bootstrap版型。
+
+![](/images/2014-01-15-jekyll-folder.png)
+
+
+-----------------
 
 -----------------
 
@@ -146,6 +153,7 @@ include themes/twitter/index.html
 
 	endfor,endif
 	語法結尾
+
 
 
 ----------
