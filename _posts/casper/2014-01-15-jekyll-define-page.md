@@ -170,6 +170,8 @@ include themes/twitter/index.html
 
 ![](/images/2014-01-13_215950.png)
 
+範例網站：[http://wcc723demo.github.io/](http://wcc723demo.github.io/)
+
 ------------
 
 ## 注意
