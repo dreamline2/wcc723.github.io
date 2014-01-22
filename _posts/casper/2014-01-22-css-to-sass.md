@@ -1,9 +1,9 @@
 ---
 layout: post
 cTitle: 從CSS到Sass 學習分享
-category: jekyll
+category: css
 tagline: 
-tags: [jekyll, github, git]
+tags: [css, sass]
 cssdemo: 
 thumbnail: banner-01.png
 published: true
