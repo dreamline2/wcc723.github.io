@@ -58,8 +58,9 @@ published: true
 1. [高雄前端社群](https://www.facebook.com/groups/358503154261390/)(這規定要放第一個)
 2. [為薄滴賽](https://www.facebook.com/groups/web.design.tw/) = Web Design
 2. [RGBA](https://www.facebook.com/groups/rgba.tw/) 網頁設計師社群
-3. [HTML5與CSS3在台灣](https://www.facebook.com/groups/htmlfive/)
-2. [KSDG](https://www.facebook.com/groups/KSDGroup/)(高雄軟體社群友情推薦)
+2. [KSDG](https://www.facebook.com/groups/KSDGroup/)(高雄軟體社群超友情推薦)
+3. [HTML5與CSS3在台灣](https://www.facebook.com/groups/htmlfive/)(超專業社群)
+
 
 一般的初學者，也可以透過以上順序當作入門的選擇(越上的越有親切感!?)，在進入社群後不只可以收到新的技術訊息、其他高手的協助，當有問題時在社群發問，也可以很迅速的獲得答案。
 
